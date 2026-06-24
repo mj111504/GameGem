@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 8bd1a7b205946d440aff93b7259ce38e
+guid: 9a744a494b61a3a42bc524304c262bd7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3049023971172189638
-    second: dischord_03_0
+      213: 4180221905088580539
+    second: chord_01v_0
+  - first:
+      213: -157576403383002406
+    second: chord_01v_1
+  - first:
+      213: 2059902628890013255
+    second: chord_01v_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,12 +43,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dischord_03_0
+      name: chord_01v_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 14
-        width: 33
-        height: 46
+        x: 6
+        y: 35
+        width: 7
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c58e59b52f405a20800000000000000
-      internalID: 3049023971172189638
+      spriteID: bbb8c17cca1230a30800000000000000
+      internalID: 4180221905088580539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chord_01v_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 7
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada5f53981d20ddf0800000000000000
+      internalID: -157576403383002406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chord_01v_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 16
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ee1e2f68e369c10800000000000000
+      internalID: 2059902628890013255
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dischord_03_0: 3049023971172189638
+      chord_01v_0: 4180221905088580539
+      chord_01v_1: -157576403383002406
+      chord_01v_2: 2059902628890013255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -196,7 +196,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -1217,7 +1221,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -1429,7 +1437,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -3097,6 +3109,7 @@ MonoBehaviour:
     idLabel: {fileID: 8995737300511422861}
     stateLabel: {fileID: 3241299014795279523}
     memoInput: {fileID: 5052930557879486624}
+<<<<<<< HEAD
   - button: {fileID: 0}
     background: {fileID: 0}
     noteImage: {fileID: 0}
@@ -3145,6 +3158,8 @@ MonoBehaviour:
     idLabel: {fileID: 0}
     stateLabel: {fileID: 0}
     memoInput: {fileID: 0}
+=======
+>>>>>>> main
   entries:
   - id: D-01
     meaning: "\uBC30\uACE0\uD30C"
@@ -3193,38 +3208,6 @@ MonoBehaviour:
   - id: C-12
     meaning: "\uC7A0"
     noteSprite: {fileID: -2198798819630416805, guid: f128e8bdd25da8345a830e6396f43a71, type: 3}
-    confirmed: 0
-  - id: C-13
-    meaning: "\uC57D"
-    noteSprite: {fileID: 3049023971172189638, guid: 8bd1a7b205946d440aff93b7259ce38e, type: 3}
-    confirmed: 0
-  - id: C-14
-    meaning: "\uBB38"
-    noteSprite: {fileID: 1812455150695319255, guid: c46b067c60395414d8f179d497ab7266, type: 3}
-    confirmed: 0
-  - id: C-15
-    meaning: "\uAE30\uB2E4\uB824"
-    noteSprite: {fileID: 373847703138201673, guid: 3c0a19abb3e5ad4458f722fa41c476a7, type: 3}
-    confirmed: 0
-  - id: C-16
-    meaning: "\uAD1C\uD788"
-    noteSprite: {fileID: 6131316481810878573, guid: 5c0326e602ca63145ae4206fb75b984a, type: 3}
-    confirmed: 0
-  - id: C-17
-    meaning: "\uAC19\uC774"
-    noteSprite: {fileID: 2355876765008737470, guid: a5164221830ca434296dd34417e5f13b, type: 3}
-    confirmed: 0
-  - id: C-18
-    meaning: "\uC544\uD30C"
-    noteSprite: {fileID: -6901625304380636459, guid: 6002e71d840761944a463a6448bd46b7, type: 3}
-    confirmed: 0
-  - id: C-19
-    meaning: "\uBBF8\uC548\uD574"
-    noteSprite: {fileID: -5290950564102561685, guid: 4f36ad99c6331fd40a424b20f6f5d0c9, type: 3}
-    confirmed: 0
-  - id: C-20
-    meaning: "\uB178\uB798"
-    noteSprite: {fileID: -4107942035592543071, guid: 073d757c5a170b04b8c1d53208ad6e82, type: 3}
     confirmed: 0
   normalCardColor: {r: 0.28, g: 0.23, b: 0.18, a: 0.95}
   selectedCardColor: {r: 0.46, g: 0.37, b: 0.22, a: 0.98}
@@ -3687,7 +3670,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -4651,7 +4638,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -5147,8 +5138,8 @@ RectTransform:
   m_GameObject: {fileID: 3642728976977373519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6785325160988538953}
   - {fileID: 4522783085301283581}
@@ -5156,8 +5147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 485, y: -35}
-  m_SizeDelta: {x: 500, y: 645}
+  m_AnchoredPosition: {x: 523, y: 5.715}
+  m_SizeDelta: {x: 480.24, y: 646.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6682124876901220261
 CanvasRenderer:
@@ -5827,7 +5818,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -5964,7 +5959,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -6280,8 +6279,13 @@ RectTransform:
   m_GameObject: {fileID: 4520736695841382368}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_LocalScale: {x: 1.25, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+=======
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 1
+>>>>>>> main
   m_Children:
   - {fileID: 3590598474025980033}
   - {fileID: 1659560173363961627}
@@ -6297,10 +6301,17 @@ RectTransform:
   - {fileID: 1602421251747184349}
   m_Father: {fileID: 680513637252741213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -225, y: -192}
   m_SizeDelta: {x: 760, y: 645}
+=======
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 101.42, y: -760}
+  m_SizeDelta: {x: 1267.166, y: 1073.127}
+>>>>>>> main
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4335514100187484832
 MonoBehaviour:
@@ -6845,7 +6856,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -8306,7 +8321,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -8350,7 +8369,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5823616695524116175}
   - {fileID: 8045219032573654514}
@@ -9093,7 +9112,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -9628,7 +9651,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -10260,7 +10287,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -10576,7 +10607,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -10892,7 +10927,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -12031,7 +12070,11 @@ MonoBehaviour:
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+<<<<<<< HEAD
   m_isOrthographic: 1
+=======
+  m_isOrthographic: 0
+>>>>>>> main
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0

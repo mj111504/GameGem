@@ -35,9 +35,12 @@ public class BookManager : MonoBehaviour
     [SerializeField] private Button closeButton;
     [SerializeField] private TextMeshProUGUI detailTitle;
     [SerializeField] private TextMeshProUGUI detailBody;
+    
+    // ★ 12개로 맞춘 UI 슬롯들을 담을 리스트
     [SerializeField] private List<WordbookEntryView> entryViews = new List<WordbookEntryView>();
 
     [Header("Entries")]
+    // ★ 12개의 데이터가 들어갈 리스트
     [SerializeField] private List<WordbookEntry> entries = new List<WordbookEntry>();
 
     [Header("Colors")]
@@ -85,7 +88,10 @@ public class BookManager : MonoBehaviour
     {
         if (string.IsNullOrEmpty(word)) return false;
 
+<<<<<<< HEAD
         // entries 리스트를 하나씩 순회하며 검사
+=======
+>>>>>>> main
         foreach (WordbookEntry entry in entries)
         {
             if (entry != null && entry.meaning == word)
@@ -110,10 +116,22 @@ public class BookManager : MonoBehaviour
             closeButton.onClick.AddListener(ToggleWordbook);
         }
 
+        // ★ [안전장치] 슬롯(UI) 개수와 실제 데이터 개수 중 더 작은 값에 맞추어 인덱스 바인딩을 진행합니다.
+        int activeCount = Mathf.Min(entryViews.Count, entries.Count);
+
         for (int i = 0; i < entryViews.Count; i++)
         {
             int index = i;
             WordbookEntryView view = entryViews[i];
+
+            if (view == null) continue;
+
+            // 12개의 범위를 넘어가는 비활성 UI 예외 처리
+            if (i >= activeCount)
+            {
+                if (view.button != null) view.button.gameObject.SetActive(false);
+                continue;
+            }
 
             if (view.button != null)
             {
@@ -148,7 +166,9 @@ public class BookManager : MonoBehaviour
 
     private void SelectEntry(int index)
     {
-        selectedIndex = Mathf.Clamp(index, 0, Mathf.Max(0, entries.Count - 1));
+        // ★ 목록이 줄어듦에 따라 선택할 수 있는 최대 인덱스 범위를 안전하게 재조정합니다.
+        int maxIndex = Mathf.Max(0, entries.Count - 1);
+        selectedIndex = Mathf.Clamp(index, 0, maxIndex);
         RefreshAll();
     }
 
@@ -157,6 +177,8 @@ public class BookManager : MonoBehaviour
         for (int i = 0; i < entryViews.Count; i++)
         {
             WordbookEntryView view = entryViews[i];
+            if (view == null) continue;
+
             bool hasEntry = i < entries.Count;
             if (view.button != null) view.button.gameObject.SetActive(hasEntry);
             if (!hasEntry) continue;
@@ -185,6 +207,7 @@ public class BookManager : MonoBehaviour
     {
         if (detailTitle == null || detailBody == null || entries.Count == 0) return;
 
+        // ★ 선택된 인덱스가 현재 줄어든 리스트 크기(12개)를 벗어나지 않게 제어합니다.
         WordbookEntry entry = entries[Mathf.Clamp(selectedIndex, 0, entries.Count - 1)];
         string memo = string.IsNullOrWhiteSpace(entry.memo) ? "비어 있음" : entry.memo;
 
