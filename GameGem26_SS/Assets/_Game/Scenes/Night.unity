@@ -538,7 +538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8630955917978225041, guid: 4b7fd95fa53f57441906363520e3ea42, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8697396426779151921, guid: 4b7fd95fa53f57441906363520e3ea42, type: 3}
       propertyPath: m_IsActive
@@ -670,6 +670,7 @@ MonoBehaviour:
   livingRoomScene: LivingRoom
   sisterRoomScene: SisterRoom
   brotherRoomScene: BrotherRoom
+  night: Night
 --- !u!4 &1128586609
 Transform:
   m_ObjectHideFlags: 0
@@ -954,9 +955,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -970,9 +969,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -990,9 +987,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1010,9 +1005,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1027,9 +1020,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1045,9 +1036,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1062,9 +1051,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0

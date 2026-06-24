@@ -922,7 +922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameFlowManager
   currentDay: 1
-  currentPhase: 2
+  currentPhase: 0
   stability: 50
   livingRoomScene: LivingRoom
   sisterRoomScene: SisterRoom
@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8c554e61b8ad04d8fa140d6597c3cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneFlow
-  action: 3
+  action: 0
 --- !u!1001 &1421028661
 PrefabInstance:
   m_ObjectHideFlags: 0

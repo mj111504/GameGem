@@ -21,6 +21,7 @@ public class GameFlowManager : MonoBehaviour
     [SerializeField] private string livingRoomScene = "LivingRoom";
     [SerializeField] private string sisterRoomScene = "SisterRoom";
     [SerializeField] private string brotherRoomScene = "BrotherRoom";
+    [SerializeField] private string night = "Night";
 
     public int CurrentDay => currentDay;
     public TimePhase CurrentPhase => currentPhase;
@@ -52,7 +53,7 @@ public class GameFlowManager : MonoBehaviour
     public void FinishNoonDialogue()
     {
         currentPhase = TimePhase.Night;
-        LoadScene(brotherRoomScene);
+        LoadScene(night);
     }
 
     public void FinishNightDeduction()
