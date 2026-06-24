@@ -394,9 +394,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -408,10 +406,18 @@ MonoBehaviour:
     - sentence: "[\uC624\uBE60] [\uBBF8\uC548\uD558\uB2E4]"
       emotion: 
       speakerName: 
-      isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: 7609557637607128777, guid: f111804f71eed514cae213b13e6f2575, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: a49d92bde4fcbee4984bde59f0d35009, type: 3}
+        harmonyClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+      - sheetName: "\uBBF8\uC548\uD558\uB2E4"
+        customSprite: {fileID: -763753513853495128, guid: 237d98dbd6532cb4b9d640795a7507aa, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 0}
+        harmonyClip: {fileID: 0}
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -424,9 +430,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -442,9 +446,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -458,9 +460,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -476,9 +476,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -490,10 +488,18 @@ MonoBehaviour:
     - sentence: "[\uC624\uBE60] [\uC18C\uB9AC] [\uB54C\uBB38\uC5D0] [\uBB34\uC12D\uB2E4]"
       emotion: 
       speakerName: 
-      isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: 21300000, guid: 9a744a494b61a3a42bc524304c262bd7, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: a49d92bde4fcbee4984bde59f0d35009, type: 3}
+        harmonyClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+      - sheetName: "\uC18C\uB9AC"
+        customSprite: {fileID: -2074325062682635477, guid: a8907a558b20ceb4a85e4eddd42eeee7, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 8895b06735274cb48be9f7d015fd9db9, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 82903b970727f414c8956f6715d24c0f, type: 3}
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -506,9 +512,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 3
@@ -521,9 +525,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -537,9 +539,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -553,9 +553,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -569,9 +567,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -586,9 +582,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -602,9 +596,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -616,10 +608,18 @@ MonoBehaviour:
     - sentence: "[\uC624\uBE60] [\uACE0\uB9D9\uB2E4]"
       emotion: 
       speakerName: 
-      isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: -5263389023159641936, guid: 1f7af49596e189745947a8377ca6ed03, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 41cba53793d39ca4999058399faae865, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 8d76173b43f4d3f4498e5023084adecb, type: 3}
+      - sheetName: "\uACE0\uB9D9\uB2E4"
+        customSprite: {fileID: 8300731307995592127, guid: b5b0297c3613a9f4985556e8210f8c8e, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 53bb04a6d5b22c1479d5717465795a70, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 5af9da6ab0e64da48bcda64bac3e11b5, type: 3}
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -633,9 +633,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -650,9 +648,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -665,9 +661,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -680,9 +674,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -695,9 +687,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -709,10 +699,28 @@ MonoBehaviour:
     - sentence: "[\uB098] [\uB2E8 \uAC83] [\uC74C\uC2DD] [\uC6D0\uD558\uB2E4]"
       emotion: 
       speakerName: 
-      isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uB098"
+        customSprite: {fileID: 21300000, guid: 9a744a494b61a3a42bc524304c262bd7, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 8dc4ca652ab2ba342aacbd7dd4aa6f41, type: 3}
+        harmonyClip: {fileID: 8300000, guid: d6611f789b685fc418544d525251877b, type: 3}
+      - sheetName: "\uB2E8 \uAC83"
+        customSprite: {fileID: 21300000, guid: 6695101295f50b8498a5429408c4fdda, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 53bb04a6d5b22c1479d5717465795a70, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 5af9da6ab0e64da48bcda64bac3e11b5, type: 3}
+      - sheetName: "\uC74C\uC2DD"
+        customSprite: {fileID: 1284069196091479361, guid: 1b52e961f20d42e43b5f3234f7b5b9ac, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 2537cc380ad7fcd4f972664f49e8a042, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 5b37d897d77512743a867f4df06b2258, type: 3}
+      - sheetName: "\uC6D0\uD558\uB2E4"
+        customSprite: {fileID: 21300000, guid: 8ec8e75a05a7fb04e884660ffa96f160, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 2537cc380ad7fcd4f972664f49e8a042, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 5b37d897d77512743a867f4df06b2258, type: 3}
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -726,9 +734,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uCF00\uC774\uD06C"
       choice1TargetIndex: 6
@@ -741,9 +747,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -757,9 +761,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -773,9 +775,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -788,9 +788,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -802,10 +800,18 @@ MonoBehaviour:
     - sentence: "[\uC624\uBE60] [\uACE0\uB9C8\uC6CC]"
       emotion: 
       speakerName: 
-      isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: -763753513853495128, guid: 237d98dbd6532cb4b9d640795a7507aa, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 41cba53793d39ca4999058399faae865, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 8d76173b43f4d3f4498e5023084adecb, type: 3}
+      - sheetName: "\uACE0\uB9C8\uC6CC"
+        customSprite: {fileID: 21300000, guid: 6695101295f50b8498a5429408c4fdda, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 41cba53793d39ca4999058399faae865, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 8d76173b43f4d3f4498e5023084adecb, type: 3}
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -818,9 +824,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -833,9 +837,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -850,9 +852,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -866,9 +866,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -881,9 +879,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -895,10 +891,18 @@ MonoBehaviour:
     - sentence: "[\uC624\uBE60] [\uACE0\uB9C8\uC6CC]"
       emotion: 
       speakerName: 
-      isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: -763753513853495128, guid: 237d98dbd6532cb4b9d640795a7507aa, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: a49d92bde4fcbee4984bde59f0d35009, type: 3}
+        harmonyClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+      - sheetName: "\uACE0\uB9C8\uC6CC"
+        customSprite: {fileID: 21300000, guid: 6695101295f50b8498a5429408c4fdda, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 41cba53793d39ca4999058399faae865, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 8d76173b43f4d3f4498e5023084adecb, type: 3}
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -911,9 +915,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -928,9 +930,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -944,9 +944,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -962,9 +960,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -977,9 +973,22 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets:
+      - sheetName: "\uB098"
+        customSprite: {fileID: 21300000, guid: 4815d2776af0b1247a43797a178d2261, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: a49d92bde4fcbee4984bde59f0d35009, type: 3}
+        harmonyClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+      - sheetName: "\uB9E4\uB4ED"
+        customSprite: {fileID: 21300000, guid: c2e0a3992448b194381b2cd121fa205e, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 5387b8b4fedfd1b4e858b5934b3a0622, type: 3}
+        harmonyClip: {fileID: 8300000, guid: f5a16e1c4826bb046a864e6a3d2ee785, type: 3}
+      - sheetName: "\uC6D0\uD558\uB2E4"
+        customSprite: {fileID: 21300000, guid: 8ec8e75a05a7fb04e884660ffa96f160, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 5387b8b4fedfd1b4e858b5934b3a0622, type: 3}
+        harmonyClip: {fileID: 8300000, guid: f5a16e1c4826bb046a864e6a3d2ee785, type: 3}
       isChoice: 1
       choice1Text: 
       choice1TargetIndex: 0
@@ -992,9 +1001,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uC2E4\uB048\uC73C\uB85C \uBA38\uB9AC\uB97C \uBB36\uC5B4\uC900\uB2E4."
       choice1TargetIndex: 5
@@ -1009,9 +1016,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1024,9 +1029,17 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 1
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: -5263389023159641936, guid: 1f7af49596e189745947a8377ca6ed03, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: a49d92bde4fcbee4984bde59f0d35009, type: 3}
+        harmonyClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+      - sheetName: "\uACE0\uB9C8\uC6CC"
+        customSprite: {fileID: 21300000, guid: 6695101295f50b8498a5429408c4fdda, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 41cba53793d39ca4999058399faae865, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 8d76173b43f4d3f4498e5023084adecb, type: 3}
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1041,9 +1054,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1057,9 +1068,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1072,9 +1081,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1087,9 +1094,12 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: -5263389023159641936, guid: 1f7af49596e189745947a8377ca6ed03, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+        harmonyClip: {fileID: 8300000, guid: d6611f789b685fc418544d525251877b, type: 3}
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1102,9 +1112,12 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets:
+      - sheetName: "\uBBF8\uC548\uD574"
+        customSprite: {fileID: 8822664357030399221, guid: 4c962cfccd7e6494da169d0725d788e3, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 41cba53793d39ca4999058399faae865, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 8d76173b43f4d3f4498e5023084adecb, type: 3}
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1118,9 +1131,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1133,9 +1144,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1148,9 +1157,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1163,9 +1170,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1179,9 +1184,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1196,9 +1199,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1212,9 +1213,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1224,7 +1223,113 @@ MonoBehaviour:
       choice3TargetIndex: 0
       isEndLine: 0
   - dayName: 5
-    dialogues: []
+    dialogues:
+    - sentence: "(\uC5EC\uB3D9\uC0DD \uBC29\uC758 \uBB38\uC744 \uC5F0\uB2E4.) "
+      emotion: 
+      speakerName: 
+      isMusicSheet: 0
+      musicSheets: []
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC5EC\uB3D9\uC0DD\uC740 \uBB54\uAC00 \uADF8\uB9AC\uC6B4 \uB4EF
+        \uCC3D\uBB38 \uBC16\uC744 \uBC14\uB77C\uBCF4\uACE0\uC788\uB2E4.)"
+      emotion: 
+      speakerName: 
+      isMusicSheet: 0
+      musicSheets: []
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uB098] [\uD53C\uC544\uB178] [\uC18C\uB9AC] [\uC6D0\uD558\uB2E4] "
+      emotion: 
+      speakerName: 
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uB098"
+        customSprite: {fileID: 21300000, guid: 9a744a494b61a3a42bc524304c262bd7, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: a49d92bde4fcbee4984bde59f0d35009, type: 3}
+        harmonyClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+      - sheetName: "\uD53C\uC544\uB178"
+        customSprite: {fileID: 21300000, guid: 65d840fb63c01b04caf662c3faea1fba, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 8895b06735274cb48be9f7d015fd9db9, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 82903b970727f414c8956f6715d24c0f, type: 3}
+      - sheetName: "\uC18C\uB9AC"
+        customSprite: {fileID: 8822664357030399221, guid: 4c962cfccd7e6494da169d0725d788e3, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 53bb04a6d5b22c1479d5717465795a70, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 5af9da6ab0e64da48bcda64bac3e11b5, type: 3}
+      - sheetName: "\uC6D0\uD558\uB2E4"
+        customSprite: {fileID: 21300000, guid: 8ec8e75a05a7fb04e884660ffa96f160, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: 2537cc380ad7fcd4f972664f49e8a042, type: 3}
+        harmonyClip: {fileID: 8300000, guid: 5b37d897d77512743a867f4df06b2258, type: 3}
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uC624\uBE60] [\uACE0\uB9C8\uC6CC]"
+      emotion: 
+      speakerName: 
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: -5263389023159641936, guid: 1f7af49596e189745947a8377ca6ed03, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: a49d92bde4fcbee4984bde59f0d35009, type: 3}
+        harmonyClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+      - sheetName: "\uACE0\uB9C8\uC6CC"
+        customSprite: {fileID: 0}
+        solvedWord: 
+        dissonanceClip: {fileID: 0}
+        harmonyClip: {fileID: 0}
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uC624\uBE60] [\uACE0\uB9C8\uC6CC]"
+      emotion: 
+      speakerName: 
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: -5263389023159641936, guid: 1f7af49596e189745947a8377ca6ed03, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: a49d92bde4fcbee4984bde59f0d35009, type: 3}
+        harmonyClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+      - sheetName: "\uACE0\uB9C8\uC6CC"
+        customSprite: {fileID: 0}
+        solvedWord: 
+        dissonanceClip: {fileID: 0}
+        harmonyClip: {fileID: 0}
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
   - dayName: 6
     dialogues: []
   - dayName: 7
@@ -1357,98 +1462,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneFlow
   action: 2
---- !u!1 &796745281
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 796745284}
-  - component: {fileID: 796745283}
-  - component: {fileID: 796745282}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &796745282
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796745281}
-  m_Enabled: 1
---- !u!20 &796745283
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796745281}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &796745284
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796745281}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1099395021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1737,11 +1750,68 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8697396426779151921, guid: 4b7fd95fa53f57441906363520e3ea42, type: 3}
   m_PrefabInstance: {fileID: 2143784897}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3920278909242943254
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686544781300479365, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418520029580624532, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b5bc5ac6f5c8a7439074d3371ee631c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 796745284}
+  - {fileID: 3920278909242943254}
   - {fileID: 211980713}
   - {fileID: 213267067}
   - {fileID: 743059599}
