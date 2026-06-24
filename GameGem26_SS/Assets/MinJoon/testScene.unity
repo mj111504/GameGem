@@ -1668,7 +1668,7 @@ MonoBehaviour:
     dialogues: []
   - dayName: 7
     dialogues: []
-  deductionSceneName: 
+  deductionSceneName: LivingRoom
 --- !u!4 &743059599
 Transform:
   m_ObjectHideFlags: 0
