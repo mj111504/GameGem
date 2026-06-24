@@ -51,20 +51,20 @@ public class BookManager : MonoBehaviour
 
     private void InitBookData()
     {
-        bookData[0, 0] = new BookItem("아이템1", "1번 설명");
-        bookData[0, 1] = new BookItem("아이템2", "2번 설명");
-        bookData[0, 2] = new BookItem("아이템3", "3번 설명");
-        bookData[0, 3] = new BookItem("아이템4", "4번 설명");
+        bookData[0, 0] = new BookItem("", "1번 설명");
+        bookData[0, 1] = new BookItem("", "2번 설명");
+        bookData[0, 2] = new BookItem("", "3번 설명");
+        bookData[0, 3] = new BookItem("", "4번 설명");
 
-        bookData[1, 0] = new BookItem("아이템5", "5번 설명");
-        bookData[1, 1] = new BookItem("아이템6", "6번 설명");
-        bookData[1, 2] = new BookItem("아이템7", "7번 설명");
-        bookData[1, 3] = new BookItem("아이템8", "8번 설명");
+        bookData[1, 0] = new BookItem("", "5번 설명");
+        bookData[1, 1] = new BookItem("", "6번 설명");
+        bookData[1, 2] = new BookItem("", "7번 설명");
+        bookData[1, 3] = new BookItem("", "8번 설명");
 
-        bookData[2, 0] = new BookItem("아이템9", "9번 설명");
-        bookData[2, 1] = new BookItem("아이템10", "10번 설명");
-        bookData[2, 2] = new BookItem("아이템11", "11번 설명");
-        bookData[2, 3] = new BookItem("아이템12", "12번 설명");
+        bookData[2, 0] = new BookItem("", "9번 설명");
+        bookData[2, 1] = new BookItem("", "10번 설명");
+        bookData[2, 2] = new BookItem("", "11번 설명");
+        bookData[2, 3] = new BookItem("", "12번 설명");
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
