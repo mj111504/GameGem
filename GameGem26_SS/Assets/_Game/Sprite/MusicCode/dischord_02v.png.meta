@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4f36ad99c6331fd40a424b20f6f5d0c9
+guid: 91c8e5e139e409148b8e7fa68976e6c9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5290950564102561685
-    second: dischord_09_0
+      213: -6584604820361019108
+    second: dischord_02v_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,12 +37,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dischord_09_0
+      name: dischord_02v_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 5
-        width: 33
-        height: 40
+        x: 3
+        y: 7
+        width: 39
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b60a38e9e74c296b0800000000000000
-      internalID: -5290950564102561685
+      spriteID: c118e087dc8ce94a0800000000000000
+      internalID: -6584604820361019108
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dischord_09_0: -5290950564102561685
+      dischord_02v_0: -6584604820361019108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
