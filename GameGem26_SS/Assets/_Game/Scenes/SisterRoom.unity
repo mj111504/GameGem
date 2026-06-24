@@ -1307,6 +1307,29 @@ MonoBehaviour:
       choice3Text: 
       choice3TargetIndex: 0
       isEndLine: 0
+    - sentence: "[\uC624\uBE60] [\uACE0\uB9C8\uC6CC]"
+      emotion: 
+      speakerName: 
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: -5263389023159641936, guid: 1f7af49596e189745947a8377ca6ed03, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 8300000, guid: a49d92bde4fcbee4984bde59f0d35009, type: 3}
+        harmonyClip: {fileID: 8300000, guid: aae688b8f08db464d90c1248ef72de2c, type: 3}
+      - sheetName: "\uACE0\uB9C8\uC6CC"
+        customSprite: {fileID: 0}
+        solvedWord: 
+        dissonanceClip: {fileID: 0}
+        harmonyClip: {fileID: 0}
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
   - dayName: 6
     dialogues: []
   - dayName: 7
