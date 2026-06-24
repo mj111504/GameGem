@@ -81,17 +81,19 @@ public class BookManager : MonoBehaviour
         SetPanelVisible(panelRoot != null && !panelRoot.activeSelf);
     }
 
-    public void ConfirmWord(string word)
+    public bool IsWordConfirmed(string word)
     {
-        for (int i = 0; i < entries.Count; i++)
+        if (string.IsNullOrEmpty(word)) return false;
+
+        // entries 리스트를 하나씩 순회하며 검사
+        foreach (WordbookEntry entry in entries)
         {
-            if (entries[i].meaning == word)
+            if (entry != null && entry.meaning == word)
             {
-                entries[i].confirmed = true;
-                RefreshAll();
-                return;
+                return entry.confirmed;
             }
         }
+        return false;
     }
 
     private void BindUi()
@@ -122,7 +124,7 @@ public class BookManager : MonoBehaviour
             if (view.memoInput != null)
             {
                 view.memoInput.onEndEdit.RemoveAllListeners();
-                view.memoInput.onEndEdit.AddListener(delegate(string text)
+                view.memoInput.onEndEdit.AddListener(delegate (string text)
                 {
                     if (index < entries.Count)
                     {
