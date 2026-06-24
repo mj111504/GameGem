@@ -394,9 +394,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -408,10 +406,18 @@ MonoBehaviour:
     - sentence: "[\uC624\uBE60] [\uBBF8\uC548\uD558\uB2E4]"
       emotion: 
       speakerName: 
-      isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      isMusicSheet: 1
+      musicSheets:
+      - sheetName: "\uC624\uBE60"
+        customSprite: {fileID: 21300000, guid: 4815d2776af0b1247a43797a178d2261, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 0}
+        harmonyClip: {fileID: 0}
+      - sheetName: "\uBBF8\uC548\uD558\uB2E4"
+        customSprite: {fileID: -763753513853495128, guid: 237d98dbd6532cb4b9d640795a7507aa, type: 3}
+        solvedWord: 
+        dissonanceClip: {fileID: 0}
+        harmonyClip: {fileID: 0}
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -424,9 +430,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -442,9 +446,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -458,9 +460,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -476,9 +476,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -491,9 +489,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -506,9 +502,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 3
@@ -521,9 +515,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -537,9 +529,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -553,9 +543,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -569,9 +557,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -586,9 +572,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -602,9 +586,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -617,9 +599,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -633,9 +613,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
@@ -650,9 +628,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -665,9 +641,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -680,9 +654,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -695,9 +667,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -710,9 +680,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -726,9 +694,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uCF00\uC774\uD06C"
       choice1TargetIndex: 6
@@ -741,9 +707,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -757,9 +721,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -773,9 +735,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -788,9 +748,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -803,9 +761,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -818,9 +774,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -833,9 +787,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -850,9 +802,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -866,9 +816,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -881,9 +829,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -896,9 +842,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -911,9 +855,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -928,9 +870,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -944,9 +884,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -962,9 +900,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -977,9 +913,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: 
       choice1TargetIndex: 0
@@ -992,9 +926,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 1
       choice1Text: "\uC2E4\uB048\uC73C\uB85C \uBA38\uB9AC\uB97C \uBB36\uC5B4\uC900\uB2E4."
       choice1TargetIndex: 5
@@ -1009,9 +941,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1024,9 +954,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 1
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1041,9 +969,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1057,9 +983,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1072,9 +996,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1087,9 +1009,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1102,9 +1022,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1118,9 +1036,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1133,9 +1049,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1148,9 +1062,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1163,9 +1075,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1179,9 +1089,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1196,9 +1104,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
@@ -1212,9 +1118,7 @@ MonoBehaviour:
       emotion: 
       speakerName: 
       isMusicSheet: 0
-      solvedWord: 
-      dissonanceClip: {fileID: 0}
-      harmonyClip: {fileID: 0}
+      musicSheets: []
       isChoice: 0
       choice1Text: 
       choice1TargetIndex: 0
