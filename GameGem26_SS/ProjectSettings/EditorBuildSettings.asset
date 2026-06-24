@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Game/Scenes/Title.unity
+    guid: 9f455bba46f919740b6fa58b4fc09273
+  - enabled: 1
+    path: Assets/_Game/Scenes/BrotherRoom.unity
+    guid: 047fa51569d9d0047869ece196a5bb45
+  - enabled: 1
     path: Assets/_Game/Scenes/SisterRoom.unity
     guid: de616c704276586439fbbd619b1ed6b8
   - enabled: 1
@@ -14,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Game/Scenes/KitchenRoom.unity
     guid: 81800b73c600eb541adcf36fbb44b4a5
-  - enabled: 1
-    path: Assets/_Game/Scenes/BrotherRoom.unity
-    guid: 047fa51569d9d0047869ece196a5bb45
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
