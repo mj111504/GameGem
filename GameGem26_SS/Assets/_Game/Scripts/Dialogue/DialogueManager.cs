@@ -259,6 +259,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    // --- [DialogueManager.cs 내부 PlaySisterVoice()] ---
     void PlaySisterVoice(DialogueLine line)
     {
         if (sisterVoiceSource == null)
@@ -270,7 +271,11 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        AudioClip clip = !string.IsNullOrEmpty(line.solvedWord) && line.harmonyClip != null
+        // ★ [체인 연결] 도감(BookManager)에서 이 단어가 맞춤(confirmed) 상태인지 실시간 체크
+        bool isConfirmedInBook = BookManager.Instance != null && BookManager.Instance.IsWordConfirmed(line.solvedWord);
+
+        // 도감에서 맞췄고, harmonyClip이 있다면 맞는 화음(harmonyClip) 재생! 아니라면 불협화음 재생!
+        AudioClip clip = isConfirmedInBook && line.harmonyClip != null
             ? line.harmonyClip
             : line.dissonanceClip;
 
