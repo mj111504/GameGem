@@ -5,21 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/MinJoon/testScene.unity
-    guid: 3d1bfcc42e175174586ce6cb0f139410
-  - enabled: 0
-    path: Assets/Scenes/LivingRoom.unity
-    guid: be43f2b476d2fd341a08d6a0249b1aa0
+    path: Assets/_Game/Scenes/SisterRoom.unity
+    guid: de616c704276586439fbbd619b1ed6b8
   - enabled: 1
-    path: Assets/MinJoon/LivingRoom.unity
-    guid: 8523e678b417310439325292365ee49b
+    path: Assets/_Game/Scenes/LivingRoom.unity
+    guid: d25f481eb12dd93428adb6e779d246d3
   - enabled: 1
-    path: Assets/MinJoon/KitchenRoom.unity
-    guid: 778ad28fed9bb7742be172b577939ea7
+    path: Assets/_Game/Scenes/KitchenRoom.unity
+    guid: 81800b73c600eb541adcf36fbb44b4a5
+  - enabled: 1
+    path: Assets/_Game/Scenes/BrotherRoom.unity
+    guid: 047fa51569d9d0047869ece196a5bb45
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
