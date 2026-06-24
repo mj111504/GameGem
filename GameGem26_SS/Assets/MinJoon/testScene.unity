@@ -399,7 +399,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2960665400173279518, guid: 13d78e3271e7f5847935a0487595fecd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -980,33 +980,695 @@ MonoBehaviour:
   choiceButton2: {fileID: 1814578773}
   choiceButton3: {fileID: 611493642}
   typingSpeed: 0.05
-  testDialogues:
-  - sentence: chord1_0
-    emotion: 
-    isMusicSheet: 1
-    solvedWord: hi
-    isChoice: 0
-    choice1Text: 
-    choice2Text: 
-    choice3Text: 
-  - sentence: hi~
-    emotion: 
-    isMusicSheet: 0
-    solvedWord: 
-    isChoice: 0
-    choice1Text: 
-    choice2Text: 
-    choice3Text: 
-  - sentence: 
-    emotion: 
-    isMusicSheet: 0
-    solvedWord: 
-    isChoice: 1
-    choice1Text: choice 1
-    choice2Text: choice 2
-    choice3Text: choice 3
   musicSheetSprites:
   - {fileID: -306762889203820680, guid: 736158a3ded0bfd498969ca4ba601a28, type: 3}
+  allDaysData:
+  - dayName: 1
+    dialogues:
+    - sentence: "(\uC5EC\uB3D9\uC0DD \uBC29\uC758 \uBB38\uC744 \uC5F0\uB2E4. \uC624\uB298\uB3C4
+        \uB098\uB97C \uBC14\uB77C\uB9CC \uBCFC \uBFD0 \uB2E4\uB978 \uBC18\uC751\uC740
+        \uC5C6\uB2E4.) \uC544\uD508\uB370\uB294 \uC5C6\uC9C0? \uD544\uC694\uD55C\uAC70
+        \uC788\uC73C\uBA74 \uCC3E\uC544\uC640. \uADF8\uB7FC \uAC00\uBCFC\uAC8C."
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uC624\uBE60] [\uBBF8\uC548\uD558\uB2E4]"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uD55C \uBC88\uB9CC \uB354 \uB9D0\uD574\uC904\uB798..? "
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC18C\uB9AC\uB294 \uB4E4\uB9AC\uC9C0\uB9CC \uBB50\uB77C\uACE0
+        \uD558\uB294\uC9C0 \uBAA8\uB974\uACA0\uB2E4. \uC5EC\uB3D9\uC0DD\uACFC\uC758
+        \uB300\uD654\uB97C \uC6D0\uD588\uC9C0\uB9CC, \uC5EC\uB3D9\uC0DD\uC740 \uC2DC\uC120\uC744
+        \uB2E4\uB978 \uACF3\uC73C\uB85C \uC62E\uAE38 \uBFD0\uC774\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uB098\uB294 \uBB38\uC744 \uC870\uC2EC\uD788 \uB2EB\uACE0 \uBC29\uC73C\uB85C
+        \uB3CC\uC544\uAC04\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+  - dayName: 2
+    dialogues:
+    - sentence: "(\uBB38\uC744 \uC5F4\uACE0 \uB4E4\uC5B4\uAC00\uB2C8 \uBD88\uD3B8\uD55C
+        \uD45C\uC815\uC758 \uC5EC\uB3D9\uC0DD\uC774 \uBCF4\uC778\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uC624\uBE60] [\uC18C\uB9AC] [\uB54C\uBB38\uC5D0] [\uBB34\uC12D\uB2E4]"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: 
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
+      choice1TargetIndex: 3
+      choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
+      choice2TargetIndex: 7
+      choice3Text: "\uADF8\uB0E5 \uB098\uAC04\uB2E4."
+      choice3TargetIndex: 9
+      isEndLine: 0
+    - sentence: "(\uB098\uB294 \uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC8FC\uC5C8\uB2E4.) "
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
+      choice1TargetIndex: 0
+      choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
+      choice2TargetIndex: 0
+      choice3Text: "\uADF8\uB0E5 \uB098\uAC04\uB2E4."
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uC774\uAC70\uB77C\uB3C4 \uC4F8\uB798? \uC18C\uB9AC\uAC00 \uBA48\uCD9C
+        \uB54C \uAE4C\uC9C0\uB9CC \uB07C\uACE0\uC788\uC5B4"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
+      choice1TargetIndex: 0
+      choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
+      choice2TargetIndex: 0
+      choice3Text: "\uADF8\uB0E5 \uB098\uAC04\uB2E4."
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC5EC\uB3D9\uC0DD\uC740 \uC7A0\uC2DC \uBA48\uCE6B\uD558\uB354\uB2C8
+        \uC870\uC2EC\uC2A4\uB7FD\uAC8C \uAC00\uC838\uAC00 \uB080\uB2E4.)\r\n"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
+      choice1TargetIndex: 0
+      choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
+      choice2TargetIndex: 0
+      choice3Text: "\uADF8\uB0E5 \uB098\uAC04\uB2E4."
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC5EC\uB3D9\uC0DD\uC758 \uD45C\uC815\uC774 \uD55C\uACB0 \uB098\uC544\uC9C4
+        \uAC83 \uAC19\uB2E4.)\r\n"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
+      choice1TargetIndex: 0
+      choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
+      choice2TargetIndex: 0
+      choice3Text: "\uADF8\uB0E5 \uB098\uAC04\uB2E4."
+      choice3TargetIndex: 0
+      isEndLine: 1
+    - sentence: "(\uB098\uB294 \uC18C\uB9AC\uAC00 \uC0D0\uB9CC\uD55C \uCC3D\uBB38\uC744
+        \uBAA8\uB450 \uB2EB\uC558\uB2E4. \uC544\uC9C1 \uC18C\uB9AC\uAC00 \uC0C8\uAE34\uD558\uC9C0\uB9CC
+        \uC870\uAE08 \uB098\uC544\uC9C4 \uB4EF \uD558\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
+      choice1TargetIndex: 0
+      choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
+      choice2TargetIndex: 0
+      choice3Text: "\uADF8\uB0E5 \uB098\uAC04\uB2E4."
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC5EC\uB3D9\uC0DD\uC758 \uD45C\uC815\uC774 \uC870\uAE08 \uB098\uC544\uC9C4
+        \uAC83 \uAC19\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
+      choice1TargetIndex: 0
+      choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
+      choice2TargetIndex: 0
+      choice3Text: "\uADF8\uB0E5 \uB098\uAC04\uB2E4."
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uC624\uBE60] [\uACE0\uB9D9\uB2E4]"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
+      choice1TargetIndex: 0
+      choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
+      choice2TargetIndex: 0
+      choice3Text: "\uADF8\uB0E5 \uB098\uAC04\uB2E4."
+      choice3TargetIndex: 0
+      isEndLine: 1
+    - sentence: "( \uB0B4\uAC00 \uC788\uC5B4\uBD24\uC790 \uC88B\uC744 \uAC8C \uC5C6\uC744
+        \uAC83 \uAC19\uB2E4. \uD63C\uC790 \uC788\uAC8C \uB098\uAC00\uC8FC\uC790.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
+      choice1TargetIndex: 0
+      choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
+      choice2TargetIndex: 0
+      choice3Text: "\uADF8\uB0E5 \uB098\uAC04\uB2E4."
+      choice3TargetIndex: 0
+      isEndLine: 1
+  - dayName: 3
+    dialogues:
+    - sentence: "(\uC5EC\uB3D9\uC0DD \uBC29\uC758 \uBB38\uC744 \uC5F0\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uBAB8\uC740 \uC880 \uC5B4\uB54C?"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uAF2C\uB974\uB975)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: ...
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uB098] [\uB2E8 \uAC83] [\uC74C\uC2DD] [\uC6D0\uD558\uB2E4]"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uC5EC\uB3D9\uC0DD\uC774 \uBC30\uACE0\uD508 \uB4EF \uD558\uB2E4.
+        \uBB34\uC5C7\uC744 \uAC00\uC838\uB2E4 \uC904\uAE4C?"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uCF00\uC774\uD06C"
+      choice1TargetIndex: 6
+      choice2Text: "\uCE58\uC988\uADF8\uB77C\uD0D5"
+      choice2TargetIndex: 12
+      choice3Text: "\uC5F0\uC5B4\uC0D0\uB7EC\uB4DC"
+      choice3TargetIndex: 12
+      isEndLine: 0
+    - sentence: "\uC774\uAC70\uB77C\uB3C4 \uBA39\uC744\uB798?"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC5EC\uB3D9\uC0DD\uC740 \uC870\uAE08 \uBC1D\uC544\uC9C4 \uD45C\uC815\uC73C\uB85C
+        \uCF00\uC774\uD06C\uB97C \uBA39\uB294\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uB2E4 \uBA39\uC5C8\uC73C\uBA74 \uADF8\uB987\uC740 \uB098\uD55C\uD14C
+        \uC918."
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: ...
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uC624\uBE60] [\uACE0\uB9C8\uC6CC]"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "... \uADF8\uB7FC \uAC00\uBCFC\uAC8C"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 1
+    - sentence: "\uC774\uAC70\uB77C\uB3C4 \uBA39\uC744\uB798?"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC5EC\uB3D9\uC0DD\uC740 \uAC00\uC838\uB2E4 \uC900 \uC74C\uC2DD\uC744
+        \uBA39\uB294\uB2E4. \uBB54\uAC00 \uB9CC\uC871\uC2A4\uB7FD\uC9C0\uB294 \uC54A\uC740
+        \uD45C\uC815\uC774\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uB2E4 \uBA39\uC5C8\uC73C\uBA74 \uADF8\uB987\uC740 \uB098\uD55C\uD14C
+        \uC918."
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: ...
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uC624\uBE60] [\uACE0\uB9C8\uC6CC]"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "... \uADF8\uB7FC \uAC00\uBCFC\uAC8C"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+  - dayName: 4
+    dialogues:
+    - sentence: "(\uC5EC\uB3D9\uC0DD \uBC29\uC758 \uBB38\uC744 \uC5F0\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC5EC\uB3D9\uC0DD\uC774 \uD5DD\uD06C\uB7EC\uC9C4 \uBA38\uB9AC\uB85C
+        \uCC3D\uBB38\uC744 \uBC14\uB77C\uBCF4\uACE0\uC788\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC778\uAE30\uCC99\uC744 \uB290\uB080 \uC5EC\uB3D9\uC0DD\uC740
+        \uB098\uB97C \uBCF4\uB354\uB2C8 \uC11C\uB78D\uC5D0\uC11C \uBB34\uC5B8\uAC08
+        \uAC00\uC838\uC624\uB354\uB2C8 \uB098\uC5D0\uAC8C \uAC74\uB124\uC900\uB2E4.
+        \uC587\uACE0 \uC608\uC05C \uC2E4\uB048\uC774\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uB098] [\uB9E4\uB4ED] [\uC6D0\uD558\uB2E4]"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: 
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 1
+      choice1Text: "\uC2E4\uB048\uC73C\uB85C \uBA38\uB9AC\uB97C \uBB36\uC5B4\uC900\uB2E4."
+      choice1TargetIndex: 5
+      choice2Text: "\uC120\uBB3C\uC744 \uBC1B\uB294\uB2E4."
+      choice2TargetIndex: 13
+      choice3Text: "\uC5EC\uB3D9\uC0DD\uC758 \uC190\uC5D0 \uB2E4\uC2DC \uC950\uC5B4\uC900\uB2E4."
+      choice3TargetIndex: 17
+      isEndLine: 0
+    - sentence: "(\uB098\uB294 \uBE57\uC744 \uAC00\uC838\uC640 \uBA38\uB9AC\uB97C
+        \uC815\uB9AC\uD574\uC900\uB2E4.)(\uB098\uB294 \uBE57\uC744 \uAC00\uC838\uC640
+        \uBA38\uB9AC\uB97C \uC815\uB9AC\uD574\uC900\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uC624\uBE60] [\uACE0\uB9C8\uC6CC]"
+      emotion: 
+      isMusicSheet: 1
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uBA38\uB9AC\uB97C \uBE57\uC5B4 \uC815\uB9AC\uD55C \uD6C4 \uC2E4\uB048\uC73C\uB85C
+        \uC608\uC804\uCC98\uB7FC \uB9AC\uBCF8\uBAA8\uC591\uC758 \uB9E4\uB4ED\uC73C\uB85C
+        \uBA38\uB9AC\uB97C \uBB36\uC5B4\uC900\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uC544\uC9C1 \uAE4C\uBA39\uC9C4 \uC54A\uC544\uC11C \uB2E4\uD589\uC774\uB124.
+        \uB108\uB3C4 \uC624\uB79C\uB9CC\uC774\uC9C0?"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: ...
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uC624\uBE60]..."
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "[\uBBF8\uC548\uD574]"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC758\uBBF8\uB294 \uBAA8\uB974\uACA0\uC9C0\uB9CC \uB098\uB294
+        \uADF8\uB0E5 \uBBF8\uC18C\uC9C0\uC5B4\uC8FC\uC5C8\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uC8FC\uB294\uAC70\uC57C?"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: ...
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uACE0\uB9C8\uC6CC."
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC5EC\uB3D9\uC0DD\uC740 \uBB54\uAC00 \uC501\uC4F8\uD55C \uC6C3\uC74C\uC744
+        \uC9D3\uB294\uB2E4.)\r\n"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "\uACE0\uB9D9\uC9C0\uB9CC \uB098\uB294 \uC4F8 \uB370\uAC00 \uC5C6\uC5B4.
+        \uB108\uD55C\uD14C \uB354 \uC798 \uC5B4\uC6B8\uB9AC\uB2C8\uAE4C \uB108\uAC00
+        \uAC00\uC9C0\uACE0\uC788\uC5B4."
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+    - sentence: "(\uC5EC\uB3D9\uC0DD\uC740 \uC7A0\uC2DC \uC190\uC744 \uBC14\uB77C\uBCF4\uB354\uB2C8
+        \uC501\uC4F8\uD55C \uC6C3\uC74C\uC744 \uC9D3\uB294\uB2E4.)"
+      emotion: 
+      isMusicSheet: 0
+      solvedWord: 
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+  - dayName: 5
+    dialogues: []
+  - dayName: 6
+    dialogues: []
+  - dayName: 7
+    dialogues: []
+  deductionSceneName: 
 --- !u!4 &743059599
 Transform:
   m_ObjectHideFlags: 0

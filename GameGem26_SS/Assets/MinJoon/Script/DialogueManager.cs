@@ -3,69 +3,106 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement; // ◀ 씬 전환을 위해 필수
 
 [System.Serializable]
 public class DialogueLine
 {
     [TextArea(3, 5)]
-    public string sentence;     // 일반 대사 내용 (여동생일 경우 악보 이미지 파일명)
-    public string emotion;      // 감정/표정 상태
+    public string sentence;
+    public string emotion;
 
     [Header("여동생 악보 설정")]
-    public bool isMusicSheet;   // 이 대사가 여동생의 악보 대사인가요?
-    public string solvedWord;   // 악보 위에 얹어질 유추된 단어 문구
+    public bool isMusicSheet;
+    public string solvedWord;
 
     [Header("선택지 설정")]
-    public bool isChoice;         // 이 타이밍에 선택지를 띄울 것인가?
-    public string choice1Text;    // 1번 버튼 문구
-    public string choice2Text;    // 2번 버튼 문구
-    public string choice3Text;    // 3번 버튼 문구 (비워두면 버튼 비활성화)
+    public bool isChoice;
+    public string choice1Text;
+    public int choice1TargetIndex; // ★ 1번 버튼을 눌렀을 때 점프할 대사 번호
+    public string choice2Text;
+    public int choice2TargetIndex; // ★ 2번 버튼을 눌렀을 때 점프할 대사 번호
+    public string choice3Text;
+    public int choice3TargetIndex; // ★ 3번 버튼을 눌렀을 때 점프할 대사 번호
+
+    [Header("시나리오 강제 종료 설정")]
+    public bool isEndLine;
+}
+
+[System.Serializable]
+public class DayData
+{
+    public string dayName; // 예: "Day 1 스토리"
+    public List<DialogueLine> dialogues;
 }
 
 public class DialogueManager : MonoBehaviour
 {
+    // ★ [전역 기억 장치] 게임 전체에서 "현재 몇 일 차"인지 기억하는 변수 (씬이 바뀌어도 유지됨)
+    // 0 = Day 1, 1 = Day 2, 2 = Day 3 ...
+    public static int GameDayIndex = 0;
+
     [Header("일반 UI 연결")]
-    public TextMeshProUGUI dialogueText;   // 일반 대사 텍스트
+    public TextMeshProUGUI dialogueText;
 
     [Header("여동생 악보 UI 연결")]
-    public GameObject chordObject;         // 여동생 오브젝트 묶음 (ChordObject)
-    public Image sheetImage;               // 악보 이미지 컴포넌트
-    public TextMeshProUGUI solvedText;     // 악보 위에 뜰 단어 텍스트
+    public GameObject chordObject;
+    public Image sheetImage;
+    public TextMeshProUGUI solvedText;
 
     [Header("선택지 UI 연결")]
-    public GameObject choiceObject;       // ChoiceObject 묶음 패널
+    public GameObject choiceObject;
     public Button choiceButton1;
     public Button choiceButton2;
     public Button choiceButton3;
 
     [Header("설정")]
     public float typingSpeed = 0.05f;
-    public List<DialogueLine> testDialogues;
     public List<Sprite> musicSheetSprites;
 
-    private Queue<DialogueLine> dialogueLines = new Queue<DialogueLine>();
+    [Header("데이별 데이터 (인스펙터에서 채우기)")]
+    public List<DayData> allDaysData; // Element 0에 Day1 대사, Element 1에 Day2 대사...
+
+    [Header("이동할 다음 씬 이름")]
+    public string deductionSceneName; // 스토리가 끝나고 이동할 [추리 씬]의 정확한 이름
+
+    private List<DialogueLine> currentDayLines = new List<DialogueLine>();
+    private int currentLineIndex = 0;
+
     private DialogueLine currentLine;
     private bool isTyping = false;
     private bool isWaitingForChoice = false;
+    private bool isStoryEnded = false;
 
     void Start()
     {
-        foreach (DialogueLine line in testDialogues)
-        {
-            dialogueLines.Enqueue(line);
-        }
-
-        // 선택지 버튼 클릭 이벤트 연결
+        // 버튼 이벤트 연결
         if (choiceButton1 != null) choiceButton1.onClick.AddListener(() => OnChoiceSelected(1));
         if (choiceButton2 != null) choiceButton2.onClick.AddListener(() => OnChoiceSelected(2));
         if (choiceButton3 != null) choiceButton3.onClick.AddListener(() => OnChoiceSelected(3));
+
+        // ★ [핵심] 현재 기억된 GameDayIndex에 맞는 데이터를 자동으로 로드합니다.
+        LoadCurrentDayDialogue();
+    }
+
+    void LoadCurrentDayDialogue()
+    {
+        // 인덱스 오버플로우 방지 안전장치
+        if (GameDayIndex >= allDaysData.Count)
+        {
+            dialogueText.text = "[더 이상 준비된 스토리 데이터가 없습니다.]";
+            return;
+        }
+
+        currentDayLines = allDaysData[GameDayIndex].dialogues;
+        currentLineIndex = 0;
+        isStoryEnded = false;
 
         DisplayNextSentence();
     }
 
     void Update()
     {
-        // 선택지 대기 중일 때는 마우스 클릭으로 넘어가는 것을 막음
         if (isWaitingForChoice) return;
 
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
@@ -78,6 +115,12 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
+                if (currentLine != null && currentLine.isEndLine)
+                {
+                    EndDialogue();
+                    return;
+                }
+
                 DisplayNextSentence();
             }
         }
@@ -85,24 +128,24 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if (dialogueLines.Count == 0)
+        if (currentLineIndex >= currentDayLines.Count)
         {
             EndDialogue();
             return;
         }
 
-        currentLine = dialogueLines.Dequeue();
+        currentLine = currentDayLines[currentLineIndex];
+        // 일단 다음 대사를 위해 인덱스를 1 올려둠 (점프가 일어나면 이 값은 무시됨)
+        currentLineIndex++;
 
-        // 1. 선택지 처리 분기
         if (currentLine.isChoice)
         {
-            dialogueText.gameObject.SetActive(false);
+            dialogueText.text = "";
             chordObject.SetActive(false);
             choiceObject.SetActive(true);
 
             choiceButton1.gameObject.SetActive(true);
             choiceButton1.GetComponentInChildren<TextMeshProUGUI>().text = currentLine.choice1Text;
-
             choiceButton2.gameObject.SetActive(true);
             choiceButton2.GetComponentInChildren<TextMeshProUGUI>().text = currentLine.choice2Text;
 
@@ -111,48 +154,51 @@ public class DialogueManager : MonoBehaviour
                 choiceButton3.gameObject.SetActive(true);
                 choiceButton3.GetComponentInChildren<TextMeshProUGUI>().text = currentLine.choice3Text;
             }
-            else
-            {
-                choiceButton3.gameObject.SetActive(false);
-            }
+            else choiceButton3.gameObject.SetActive(false);
 
             isWaitingForChoice = true;
             return;
         }
 
-        // 2. 여동생 악보 처리 분기
         if (currentLine.isMusicSheet)
         {
-            dialogueText.gameObject.SetActive(false);
             choiceObject.SetActive(false);
             chordObject.SetActive(true);
 
-            // 악보 이미지 변경
             Sprite targetSprite = musicSheetSprites.Find(s => s.name == currentLine.sentence);
             if (targetSprite != null) sheetImage.sprite = targetSprite;
 
-            // 악보 위에 유추된 텍스트 바로 표시
             solvedText.text = currentLine.solvedWord;
-
             isTyping = false;
         }
-        // 3. 일반 대사 처리 분기
         else
         {
             chordObject.SetActive(false);
             choiceObject.SetActive(false);
-            dialogueText.gameObject.SetActive(true);
 
             StopAllCoroutines();
             StartCoroutine(TypeSentence(currentLine.sentence));
         }
     }
 
-    public void OnChoiceSelected(int choiceIndex)
+    public void OnChoiceSelected(int choiceButtonNumber)
     {
-        Debug.Log($"{choiceIndex}번 선택지를 골랐습니다.");
         choiceObject.SetActive(false);
         isWaitingForChoice = false;
+
+        if (choiceButtonNumber == 1)
+        {
+            currentLineIndex = currentLine.choice1TargetIndex;
+        }
+        else if (choiceButtonNumber == 2)
+        {
+            currentLineIndex = currentLine.choice2TargetIndex;
+        }
+        else if (choiceButtonNumber == 3)
+        {
+            currentLineIndex = currentLine.choice3TargetIndex;
+        }
+
         DisplayNextSentence();
     }
 
@@ -168,11 +214,17 @@ public class DialogueManager : MonoBehaviour
         isTyping = false;
     }
 
+    // ★ 오늘의 스토리가 끝났을 때 실행되는 함수
     void EndDialogue()
     {
-        dialogueText.text = "[이야기가 끝났습니다.]";
-        dialogueText.gameObject.SetActive(true);
-        chordObject.SetActive(false);
-        choiceObject.SetActive(false);
+        // 스토리가 끝났으므로 팀원이 만든 [추리 씬]으로 넘겨줍니다.
+        if (!string.IsNullOrEmpty(deductionSceneName))
+        {
+            SceneManager.LoadScene(deductionSceneName);
+        }
+        else
+        {
+            dialogueText.text = "[스토리가 끝났습니다. 다음 추리 씬 이름이 입력되지 않았습니다.]";
+        }
     }
 }
