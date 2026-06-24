@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameFlowManager
   currentDay: 1
-  currentPhase: 0
+  currentPhase: 1
   stability: 50
   livingRoomScene: LivingRoom
   sisterRoomScene: SisterRoom
