@@ -469,6 +469,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4f2fcfcc72ecd24aab2b557138133c3, type: 3}
+--- !u!1 &1044682731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8630955917978225041, guid: 4b7fd95fa53f57441906363520e3ea42, type: 3}
+  m_PrefabInstance: {fileID: 1113444646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1113444646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -901,7 +906,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1188595832 stripped
+--- !u!114 &1234233404 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 595323325031026026, guid: 4b7fd95fa53f57441906363520e3ea42, type: 3}
   m_PrefabInstance: {fileID: 1113444646}
@@ -1035,7 +1040,36 @@ MonoBehaviour:
   typingSpeed: 0.05
   musicSheetSprites: []
   sisterVoiceSource: {fileID: 0}
-  allDaysData: []
+  allDaysData:
+  - dayName: 1
+    dialogues:
+    - sentence: "\uB370\uC774 \uC6D0 \uC785\uB2C8\uB2E4."
+      emotion: 
+      speakerName: 
+      isMusicSheet: 0
+      solvedWord: 
+      dissonanceClip: {fileID: 0}
+      harmonyClip: {fileID: 0}
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
   onDialogueEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -1437,13 +1471,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8fb4373cf3f9d4a8c0c79c56ea208a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickToTalk
-  dialogueCanvas: {fileID: 1113444657}
+  dialogueCanvas: {fileID: 1044682731}
   dialogueText: {fileID: 1113444656}
-  subInfoText: {fileID: 1188595832}
+  subInfoText: {fileID: 1234233404}
   clickHintObject: {fileID: 1113444654}
-  clickDialogue: "ViolinClick\uC744(\uB97C) \uC0B4\uD3B4\uBD24\uB2E4."
-  firstDialogue: 
-  secondDialogue: 
+  dialogues: []
   typingSpeed: 0.05
 --- !u!1001 &1969242321
 PrefabInstance:
@@ -1615,13 +1647,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8fb4373cf3f9d4a8c0c79c56ea208a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickToTalk
-  dialogueCanvas: {fileID: 1113444657}
-  dialogueText: {fileID: 1113444656}
-  subInfoText: {fileID: 1188595832}
-  clickHintObject: {fileID: 1113444654}
-  clickDialogue: "HospitalClick\uC744(\uB97C) \uC0B4\uD3B4\uBD24\uB2E4."
-  firstDialogue: 
-  secondDialogue: 
+  dialogueCanvas: {fileID: 0}
+  dialogueText: {fileID: 0}
+  subInfoText: {fileID: 0}
+  clickHintObject: {fileID: 0}
+  dialogues: []
   typingSpeed: 0.05
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
