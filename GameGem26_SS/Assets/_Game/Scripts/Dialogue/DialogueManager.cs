@@ -5,6 +5,17 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 
+// ★ [추가] 악보 하나하나의 독립된 데이터를 담는 클래스
+[System.Serializable]
+public class MusicSheetData
+{
+    public string sheetName;           // 악보 스프라이트를 검색할 이름
+    public Sprite customSprite;        // (선택) 인스펙터에서 직접 이미지를 드래그 앤 드롭하고 싶을 때 사용
+    public string solvedWord;          // 이 악보의 정답 단어
+    public AudioClip dissonanceClip;   // 이 악보의 불협화음 사운드
+    public AudioClip harmonyClip;      // 이 악보의 화음 사운드
+}
+
 [System.Serializable]
 public class DialogueLine
 {
@@ -15,18 +26,17 @@ public class DialogueLine
 
     [Header("여동생 악보 설정")]
     public bool isMusicSheet;
-    public string solvedWord;
-    public AudioClip dissonanceClip;
-    public AudioClip harmonyClip;
+    // ★ 기존 단일 변수들을 제거하고, 여러 개의 악보를 넣을 수 있도록 리스트로 변경
+    public List<MusicSheetData> musicSheets;
 
     [Header("선택지 설정")]
     public bool isChoice;
     public string choice1Text;
-    public int choice1TargetIndex; // ★ 1번 버튼을 눌렀을 때 점프할 대사 번호
+    public int choice1TargetIndex;
     public string choice2Text;
-    public int choice2TargetIndex; // ★ 2번 버튼을 눌렀을 때 점프할 대사 번호
+    public int choice2TargetIndex;
     public string choice3Text;
-    public int choice3TargetIndex; // ★ 3번 버튼을 눌렀을 때 점프할 대사 번호
+    public int choice3TargetIndex;
 
     [Header("시나리오 강제 종료 설정")]
     public bool isEndLine;
@@ -35,14 +45,12 @@ public class DialogueLine
 [System.Serializable]
 public class DayData
 {
-    public string dayName; // 예: "Day 1 스토리"
+    public string dayName;
     public List<DialogueLine> dialogues;
 }
 
 public class DialogueManager : MonoBehaviour
 {
-    // ★ [전역 기억 장치] 게임 전체에서 "현재 몇 일 차"인지 기억하는 변수 (씬이 바뀌어도 유지됨)
-    // 0 = Day 1, 1 = Day 2, 2 = Day 3 ...
     public static int GameDayIndex = 0;
 
     [Header("일반 UI 연결")]
@@ -67,13 +75,16 @@ public class DialogueManager : MonoBehaviour
     public AudioSource sisterVoiceSource;
 
     [Header("데이별 데이터 (인스펙터에서 채우기)")]
-    public List<DayData> allDaysData; // Element 0에 Day1 대사, Element 1에 Day2 대사...
+    public List<DayData> allDaysData;
 
     [Header("대사 종료 이벤트")]
     public UnityEvent onDialogueEnded;
 
     private List<DialogueLine> currentDayLines = new List<DialogueLine>();
     private int currentLineIndex = 0;
+
+    // ★ [추가] 하나의 대사(DialogueLine) 안에서 현재 몇 번째 악보를 보여주고 있는지 기억하는 인덱스
+    private int currentSheetIndex = 0;
 
     private DialogueLine currentLine;
     private bool isTyping = false;
@@ -83,12 +94,10 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
-        // 버튼 이벤트 연결
         if (choiceButton1 != null) choiceButton1.onClick.AddListener(() => OnChoiceSelected(1));
         if (choiceButton2 != null) choiceButton2.onClick.AddListener(() => OnChoiceSelected(2));
         if (choiceButton3 != null) choiceButton3.onClick.AddListener(() => OnChoiceSelected(3));
 
-        // ★ [핵심] 현재 기억된 GameDayIndex에 맞는 데이터를 자동으로 로드합니다.
         LoadCurrentDayDialogue();
     }
 
@@ -96,7 +105,6 @@ public class DialogueManager : MonoBehaviour
     {
         int dayIndex = GameFlowManager.Instance != null ? GameFlowManager.Instance.CurrentDay - 1 : GameDayIndex;
 
-        // 인덱스 오버플로우 방지 안전장치
         if (dayIndex < 0 || dayIndex >= allDaysData.Count)
         {
             dialogueText.text = "[더 이상 준비된 스토리 데이터가 없습니다.]";
@@ -105,6 +113,7 @@ public class DialogueManager : MonoBehaviour
 
         currentDayLines = allDaysData[dayIndex].dialogues;
         currentLineIndex = 0;
+        currentSheetIndex = 0; // 초기화 [추가]
         isStoryEnded = false;
         hasRaisedEndEvent = false;
 
@@ -126,6 +135,13 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
+                // 악보 연속 재생 중일 때는 'isEndLine' 체크로 넘어가기 전에 다음 악보를 먼저 보여줌
+                if (currentLine != null && currentLine.isMusicSheet)
+                {
+                    DisplayNextSentence();
+                    return;
+                }
+
                 if (currentLine != null && currentLine.isEndLine)
                 {
                     EndDialogue();
@@ -139,14 +155,73 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if (currentLineIndex >= currentDayLines.Count)
+        // 더 이상 대사가 없고, 악보 진행도 끝났다면 종료
+        if (currentLineIndex >= currentDayLines.Count && currentSheetIndex == 0)
         {
             EndDialogue();
             return;
         }
 
+        // 현재 진행할 대사 라인 참조
         currentLine = currentDayLines[currentLineIndex];
-        // 일단 다음 대사를 위해 인덱스를 1 올려둠 (점프가 일어나면 이 값은 무시됨)
+
+        // --- [악보 기믹 처리 영역] ---
+        if (currentLine.isMusicSheet)
+        {
+            // 방어 코드: 악보 리스트가 비어있다면 그냥 다음 대사로 패스
+            if (currentLine.musicSheets == null || currentLine.musicSheets.Count == 0)
+            {
+                currentLineIndex++;
+                currentSheetIndex = 0;
+                DisplayNextSentence();
+                return;
+            }
+
+            choiceObject.SetActive(false);
+            SetDialogueBoxVisible(false);
+            SetMusicBoxVisible(true);
+
+            // 현재 순서의 악보 데이터 가져오기
+            MusicSheetData currentSheet = currentLine.musicSheets[currentSheetIndex];
+
+            // 1. 이미지 설정 (customSprite가 있으면 우선 적용, 없으면 이름으로 검색)
+            if (currentSheet.customSprite != null)
+            {
+                sheetImage.sprite = currentSheet.customSprite;
+            }
+            else
+            {
+                Sprite targetSprite = musicSheetSprites.Find(s => s.name == currentSheet.sheetName);
+                if (targetSprite != null) sheetImage.sprite = targetSprite;
+            }
+
+            // 2. 텍스트 설정
+            if (solvedText != null)
+            {
+                solvedText.text = currentSheet.solvedWord;
+            }
+
+            // 3. 고유 사운드 재생
+            PlaySisterVoice(currentSheet);
+
+            isTyping = false;
+            SetClickHintVisible(true);
+
+            // 다음 클릭을 위해 악보 인덱스 증가
+            currentSheetIndex++;
+
+            // 이 대사 라인의 모든 악보를 다 보여주었다면?
+            if (currentSheetIndex >= currentLine.musicSheets.Count)
+            {
+                currentSheetIndex = 0; // 악보 인덱스 초기화
+                currentLineIndex++;    // 다음 대사 라인으로 넘어가도록 증가
+            }
+            return;
+        }
+
+        // --- [일반 대사 및 선택지 처리 영역] ---
+        // 일반 대사로 넘어왔으므로 악보 인덱스는 안전하게 0으로 세팅
+        currentSheetIndex = 0;
         currentLineIndex++;
 
         if (currentLine.isChoice)
@@ -171,34 +246,13 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (currentLine.isMusicSheet)
-        {
-            choiceObject.SetActive(false);
-            SetDialogueBoxVisible(false);
-            SetMusicBoxVisible(true);
+        SetMusicBoxVisible(false);
+        choiceObject.SetActive(false);
+        SetDialogueBoxVisible(true);
+        SetClickHintVisible(false);
 
-            Sprite targetSprite = musicSheetSprites.Find(s => s.name == currentLine.sentence);
-            if (targetSprite != null) sheetImage.sprite = targetSprite;
-
-            if (solvedText != null)
-            {
-                solvedText.text = currentLine.solvedWord;
-            }
-
-            PlaySisterVoice(currentLine);
-            isTyping = false;
-            SetClickHintVisible(true);
-        }
-        else
-        {
-            SetMusicBoxVisible(false);
-            choiceObject.SetActive(false);
-            SetDialogueBoxVisible(true);
-            SetClickHintVisible(false);
-
-            StopAllCoroutines();
-            StartCoroutine(TypeSentence(currentLine.sentence));
-        }
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(currentLine.sentence));
     }
 
     public void OnChoiceSelected(int choiceButtonNumber)
@@ -206,19 +260,11 @@ public class DialogueManager : MonoBehaviour
         choiceObject.SetActive(false);
         isWaitingForChoice = false;
 
-        if (choiceButtonNumber == 1)
-        {
-            currentLineIndex = currentLine.choice1TargetIndex;
-        }
-        else if (choiceButtonNumber == 2)
-        {
-            currentLineIndex = currentLine.choice2TargetIndex;
-        }
-        else if (choiceButtonNumber == 3)
-        {
-            currentLineIndex = currentLine.choice3TargetIndex;
-        }
+        if (choiceButtonNumber == 1) currentLineIndex = currentLine.choice1TargetIndex;
+        else if (choiceButtonNumber == 2) currentLineIndex = currentLine.choice2TargetIndex;
+        else if (choiceButtonNumber == 3) currentLineIndex = currentLine.choice3TargetIndex;
 
+        currentSheetIndex = 0; // 선택지 점프 시 악보 인덱스 초기화
         DisplayNextSentence();
     }
 
@@ -235,32 +281,12 @@ public class DialogueManager : MonoBehaviour
         SetClickHintVisible(true);
     }
 
-    void SetDialogueBoxVisible(bool visible)
-    {
-        if (dialogueBoxObject != null)
-        {
-            dialogueBoxObject.SetActive(visible);
-        }
-    }
+    void SetDialogueBoxVisible(bool visible) { if (dialogueBoxObject != null) dialogueBoxObject.SetActive(visible); }
+    void SetMusicBoxVisible(bool visible) { if (chordObject != null) chordObject.SetActive(visible); }
+    void SetClickHintVisible(bool visible) { if (clickHintObject != null) clickHintObject.SetActive(visible); }
 
-    void SetMusicBoxVisible(bool visible)
-    {
-        if (chordObject != null)
-        {
-            chordObject.SetActive(visible);
-        }
-    }
-
-    void SetClickHintVisible(bool visible)
-    {
-        if (clickHintObject != null)
-        {
-            clickHintObject.SetActive(visible);
-        }
-    }
-
-    // --- [DialogueManager.cs 내부 PlaySisterVoice()] ---
-    void PlaySisterVoice(DialogueLine line)
+    // ★ [수정] 개별 악보 데이터를 직접 매개변수로 받도록 변경
+    void PlaySisterVoice(MusicSheetData sheet)
     {
         if (sisterVoiceSource == null)
         {
@@ -271,13 +297,10 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        // ★ [체인 연결] 도감(BookManager)에서 이 단어가 맞춤(confirmed) 상태인지 실시간 체크
-        bool isConfirmedInBook = BookManager.Instance != null && BookManager.Instance.IsWordConfirmed(line.solvedWord);
-
-        // 도감에서 맞췄고, harmonyClip이 있다면 맞는 화음(harmonyClip) 재생! 아니라면 불협화음 재생!
-        AudioClip clip = isConfirmedInBook && line.harmonyClip != null
-            ? line.harmonyClip
-            : line.dissonanceClip;
+        // 매개변수로 넘어온 악보(sheet)의 클립 데이터 활용
+        AudioClip clip = !string.IsNullOrEmpty(sheet.solvedWord) && sheet.harmonyClip != null
+            ? sheet.harmonyClip
+            : sheet.dissonanceClip;
 
         if (clip != null)
         {
@@ -286,13 +309,9 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // ★ 오늘의 스토리가 끝났을 때 실행되는 함수
     void EndDialogue()
     {
-        if (hasRaisedEndEvent)
-        {
-            return;
-        }
+        if (hasRaisedEndEvent) return;
 
         hasRaisedEndEvent = true;
         isStoryEnded = true;
