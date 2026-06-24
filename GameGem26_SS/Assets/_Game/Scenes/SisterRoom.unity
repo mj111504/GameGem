@@ -526,7 +526,7 @@ MonoBehaviour:
       speakerName: 
       isMusicSheet: 0
       musicSheets: []
-      isChoice: 1
+      isChoice: 0
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
       choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
@@ -540,7 +540,7 @@ MonoBehaviour:
       speakerName: 
       isMusicSheet: 0
       musicSheets: []
-      isChoice: 1
+      isChoice: 0
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
       choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
@@ -554,7 +554,7 @@ MonoBehaviour:
       speakerName: 
       isMusicSheet: 0
       musicSheets: []
-      isChoice: 1
+      isChoice: 0
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
       choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
@@ -568,7 +568,7 @@ MonoBehaviour:
       speakerName: 
       isMusicSheet: 0
       musicSheets: []
-      isChoice: 1
+      isChoice: 0
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
       choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
@@ -597,7 +597,7 @@ MonoBehaviour:
       speakerName: 
       isMusicSheet: 0
       musicSheets: []
-      isChoice: 1
+      isChoice: 0
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
       choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
@@ -620,7 +620,7 @@ MonoBehaviour:
         solvedWord: 
         dissonanceClip: {fileID: 8300000, guid: 53bb04a6d5b22c1479d5717465795a70, type: 3}
         harmonyClip: {fileID: 8300000, guid: 5af9da6ab0e64da48bcda64bac3e11b5, type: 3}
-      isChoice: 1
+      isChoice: 0
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
       choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
@@ -634,7 +634,7 @@ MonoBehaviour:
       speakerName: 
       isMusicSheet: 0
       musicSheets: []
-      isChoice: 1
+      isChoice: 0
       choice1Text: "\uADC0\uB9C8\uAC1C\uB97C \uAC00\uC838\uB2E4 \uC900\uB2E4."
       choice1TargetIndex: 0
       choice2Text: "\uCC3D\uBB38\uC744 \uB2EB\uB294\uB2E4."
