@@ -1104,6 +1104,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4f2fcfcc72ecd24aab2b557138133c3, type: 3}
+--- !u!1 &1044682731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8630955917978225041, guid: 4b7fd95fa53f57441906363520e3ea42, type: 3}
+  m_PrefabInstance: {fileID: 1113444646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1113444646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1333,7 +1338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameFlowManager
   currentDay: 1
-  currentPhase: 0
+  currentPhase: 2
   stability: 50
   livingRoomScene: LivingRoom
   sisterRoomScene: SisterRoom
@@ -1438,7 +1443,7 @@ Transform:
   m_GameObject: {fileID: 1137891211}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.89, y: 0.14, z: 0}
+  m_LocalPosition: {x: 2.03, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1536,7 +1541,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1188595832 stripped
+--- !u!114 &1234233404 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 595323325031026026, guid: 4b7fd95fa53f57441906363520e3ea42, type: 3}
   m_PrefabInstance: {fileID: 1113444646}
@@ -1670,7 +1675,36 @@ MonoBehaviour:
   typingSpeed: 0.05
   musicSheetSprites: []
   sisterVoiceSource: {fileID: 0}
-  allDaysData: []
+  allDaysData:
+  - dayName: 1
+    dialogues:
+    - sentence: "\uB370\uC774 \uC6D0 \uC785\uB2C8\uB2E4."
+      emotion: 
+      speakerName: 
+      isMusicSheet: 0
+      solvedWord: 
+      dissonanceClip: {fileID: 0}
+      harmonyClip: {fileID: 0}
+      isChoice: 0
+      choice1Text: 
+      choice1TargetIndex: 0
+      choice2Text: 
+      choice2TargetIndex: 0
+      choice3Text: 
+      choice3TargetIndex: 0
+      isEndLine: 0
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
+  - dayName: 
+    dialogues: []
   onDialogueEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -1799,6 +1833,119 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneFlow
   action: 3
+--- !u!1001 &1421028661
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358066086479497577, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013800051586423348, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: targetSceneName
+      value: LivingRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723107540241841503, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303474371265414706, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611022034926796167, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: m_Name
+      value: ButtonCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015603027983311882, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
+      propertyPath: targetSceneName
+      value: LivingRoom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfe0b7841960f9043a2a1c282e7dc667, type: 3}
 --- !u!1001 &1775866664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1835,11 +1982,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128450523932569803, guid: 0d93bcb485b26bb4fa2064b10d339490, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.13
+      value: 8.99
       objectReference: {fileID: 0}
     - target: {fileID: 2128450523932569803, guid: 0d93bcb485b26bb4fa2064b10d339490, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.69
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 2128450523932569803, guid: 0d93bcb485b26bb4fa2064b10d339490, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1935,7 +2082,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.1131196, y: -0.03085041}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1945,7 +2092,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.2, y: 1.4}
+  m_Size: {x: 1.068819, y: 2.0787106}
   m_EdgeRadius: 0
 --- !u!114 &1775866671
 MonoBehaviour:
@@ -1959,13 +2106,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8fb4373cf3f9d4a8c0c79c56ea208a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickToTalk
-  dialogueCanvas: {fileID: 1113444657}
+  dialogueCanvas: {fileID: 1044682731}
   dialogueText: {fileID: 1113444656}
-  subInfoText: {fileID: 1188595832}
+  subInfoText: {fileID: 1234233404}
   clickHintObject: {fileID: 1113444654}
-  clickDialogue: "ViolinClick\uC744(\uB97C) \uC0B4\uD3B4\uBD24\uB2E4."
-  firstDialogue: 
-  secondDialogue: 
+  dialogues: []
   typingSpeed: 0.05
 --- !u!1001 &1969242321
 PrefabInstance:
@@ -2013,11 +2158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128450523932569803, guid: 0d93bcb485b26bb4fa2064b10d339490, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.83
+      value: 5.28
       objectReference: {fileID: 0}
     - target: {fileID: 2128450523932569803, guid: 0d93bcb485b26bb4fa2064b10d339490, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.93
       objectReference: {fileID: 0}
     - target: {fileID: 2128450523932569803, guid: 0d93bcb485b26bb4fa2064b10d339490, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2113,7 +2258,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.49360752, y: -0.22623742}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2123,7 +2268,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.2, y: 1.4}
+  m_Size: {x: 1.2127848, y: 0.947525}
   m_EdgeRadius: 0
 --- !u!114 &1969242328
 MonoBehaviour:
@@ -2137,13 +2282,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8fb4373cf3f9d4a8c0c79c56ea208a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickToTalk
-  dialogueCanvas: {fileID: 1113444657}
-  dialogueText: {fileID: 1113444656}
-  subInfoText: {fileID: 1188595832}
-  clickHintObject: {fileID: 1113444654}
-  clickDialogue: "HospitalClick\uC744(\uB97C) \uC0B4\uD3B4\uBD24\uB2E4."
-  firstDialogue: 
-  secondDialogue: 
+  dialogueCanvas: {fileID: 0}
+  dialogueText: {fileID: 0}
+  subInfoText: {fileID: 0}
+  clickHintObject: {fileID: 0}
+  dialogues: []
   typingSpeed: 0.05
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -2159,3 +2302,4 @@ SceneRoots:
   - {fileID: 1113444646}
   - {fileID: 1128586609}
   - {fileID: 722578731}
+  - {fileID: 1421028661}
