@@ -4,7 +4,8 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 public class BookManager : MonoBehaviour
-{
+{   
+    // 여기서 배열 접근
     public static BookManager Instance { get; private set; }
 
     public struct BookItem
@@ -21,7 +22,25 @@ public class BookManager : MonoBehaviour
 
     public BookItem[,] bookData = new BookItem[3, 4];
 
-    // 이제 일반 Text 배열은 삭제하고 InputField 배열 하나만 관리합니다.
+    /*
+    외부에서 데이터 접근하는 소스코드
+    using UnityEngine;
+    public class DisplayBookInfo : MonoBehaviour
+    {
+        private void Start()
+        {
+            // 싱글톤 인스턴스가 존재하는지 확인 후 접근
+            if (BookManager.Instance != null)
+            {
+                // 0행 0열의 BookItem 데이터 가져오기
+                BookManager.BookItem item = BookManager.Instance.bookData[0, 0];
+            
+                // 데이터 출력
+                Debug.Log($"책 이름: {item.name}, 설명: {item.content}");
+            }
+        }
+    }
+    */
     [HideInInspector] public TMP_InputField[] bookInputFields = new TMP_InputField[12];
 
     private void Awake()
