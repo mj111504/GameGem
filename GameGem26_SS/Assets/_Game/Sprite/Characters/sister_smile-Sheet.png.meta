@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: 7a0cbc5f47d786b4e900e2b0c43a6c70
+guid: 439bc975ccf2cca40901865f46658070
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4340766602723917302
-    second: default-Sheet_0
+      213: 6591916134428225723
+    second: sister_smile-Sheet_0
+  - first:
+      213: 2186127125155349712
+    second: sister_smile-Sheet_1
+  - first:
+      213: -7804830944401374627
+    second: sister_smile-Sheet_2
+  - first:
+      213: -7808639831788620513
+    second: sister_smile-Sheet_3
+  - first:
+      213: -4689973486302401367
+    second: sister_smile-Sheet_4
+  - first:
+      213: -972028926188661199
+    second: sister_smile-Sheet_5
+  - first:
+      213: 2811829280371401527
+    second: sister_smile-Sheet_6
+  - first:
+      213: 8530796491824055587
+    second: sister_smile-Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,12 +121,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: default-Sheet_0
+      name: sister_smile-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 62
+        y: 2
+        width: 64
         height: 202
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -115,19 +136,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fdfc301a308d3c30800000000000000
-      internalID: 4340766602723917302
+      spriteID: bb0b2cd7cc03b7b50800000000000000
+      internalID: 6591916134428225723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_1
+      name: sister_smile-Sheet_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 0
-        width: 62
+        x: 64
+        y: 2
+        width: 64
         height: 202
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -135,21 +156,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0fb9533d5ae525c46816b2675778de80
-      internalID: 863707230
+      spriteID: 0d40bb8a90fa65e10800000000000000
+      internalID: 2186127125155349712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_2
+      name: sister_smile-Sheet_2
       rect:
         serializedVersion: 2
-        x: 124
-        y: 0
-        width: 62
+        x: 128
+        y: 2
+        width: 64
         height: 202
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -157,21 +178,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 983a6ab1ef0677140a0a94fe6e6c7cec
-      internalID: 618545157
+      spriteID: d52cafa9b9bafa390800000000000000
+      internalID: -7804830944401374627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_3
+      name: sister_smile-Sheet_3
       rect:
         serializedVersion: 2
-        x: 186
-        y: 0
-        width: 62
+        x: 192
+        y: 2
+        width: 64
         height: 202
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -179,21 +200,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0aacd4f9847c6b04484f74b3b975dd6e
-      internalID: -1258183225
+      spriteID: f15f547e17322a390800000000000000
+      internalID: -7808639831788620513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_4
+      name: sister_smile-Sheet_4
       rect:
         serializedVersion: 2
-        x: 248
-        y: 0
-        width: 62
+        x: 256
+        y: 2
+        width: 64
         height: 202
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -201,21 +222,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: af92437f11be1d34fbec7b0b58eb9b7a
-      internalID: 1584795037
+      spriteID: 9ace1f676fdd9eeb0800000000000000
+      internalID: -4689973486302401367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_5
+      name: sister_smile-Sheet_5
       rect:
         serializedVersion: 2
-        x: 310
-        y: 0
-        width: 62
+        x: 320
+        y: 2
+        width: 64
         height: 202
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -223,21 +244,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 893cfa7575f2cce40898ee2d2a2b5143
-      internalID: 1241359077
+      spriteID: 136de1777d8a282f0800000000000000
+      internalID: -972028926188661199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_6
+      name: sister_smile-Sheet_6
       rect:
         serializedVersion: 2
-        x: 372
-        y: 0
-        width: 62
+        x: 384
+        y: 2
+        width: 64
         height: 202
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -245,21 +266,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a87cfae3db0ed044d83cf30e6de72e4a
-      internalID: 2121419376
+      spriteID: 733649135df950720800000000000000
+      internalID: 2811829280371401527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_7
+      name: sister_smile-Sheet_7
       rect:
         serializedVersion: 2
-        x: 434
-        y: 0
-        width: 62
+        x: 448
+        y: 2
+        width: 64
         height: 202
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -267,10 +288,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4cd0a0ea98e100641afc732678ede638
-      internalID: -1002117985
+      spriteID: 3254252163a736670800000000000000
+      internalID: 8530796491824055587
       vertices: []
       indices: 
       edges: []
@@ -279,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8d532d44d51e21b448a86b4561c0cc42
+    spriteID: 60b3f72708f4b774c9aba625f724c2bd
     internalID: 0
     vertices: []
     indices: 
@@ -289,16 +310,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":62.0,"y":202.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":202.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      default-Sheet_0: 4340766602723917302
-      default-Sheet_1: 863707230
-      default-Sheet_2: 618545157
-      default-Sheet_3: -1258183225
-      default-Sheet_4: 1584795037
-      default-Sheet_5: 1241359077
-      default-Sheet_6: 2121419376
-      default-Sheet_7: -1002117985
+      sister_smile-Sheet_0: 6591916134428225723
+      sister_smile-Sheet_1: 2186127125155349712
+      sister_smile-Sheet_2: -7804830944401374627
+      sister_smile-Sheet_3: -7808639831788620513
+      sister_smile-Sheet_4: -4689973486302401367
+      sister_smile-Sheet_5: -972028926188661199
+      sister_smile-Sheet_6: 2811829280371401527
+      sister_smile-Sheet_7: 8530796491824055587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

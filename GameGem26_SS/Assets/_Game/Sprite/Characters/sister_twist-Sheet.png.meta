@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: 7a0cbc5f47d786b4e900e2b0c43a6c70
+guid: 43ddf77bd7f5cd844a6a985806a284fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4340766602723917302
-    second: default-Sheet_0
+      213: -7488985186458584283
+    second: sister_twist-Sheet_0
+  - first:
+      213: 4656104641521702000
+    second: sister_twist-Sheet_1
+  - first:
+      213: -4989288993050512617
+    second: sister_twist-Sheet_2
+  - first:
+      213: -2055580339248873174
+    second: sister_twist-Sheet_3
+  - first:
+      213: 8399469001325455945
+    second: sister_twist-Sheet_4
+  - first:
+      213: -6456286497499913115
+    second: sister_twist-Sheet_5
+  - first:
+      213: 9191460027242978328
+    second: sister_twist-Sheet_6
+  - first:
+      213: 6850671657662812000
+    second: sister_twist-Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: default-Sheet_0
+      name: sister_twist-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1
+        y: 1
         width: 62
-        height: 202
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,162 +136,162 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fdfc301a308d3c30800000000000000
-      internalID: 4340766602723917302
+      spriteID: 52b39f8b6a7c11890800000000000000
+      internalID: -7488985186458584283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_1
+      name: sister_twist-Sheet_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 0
+        x: 65
+        y: 1
         width: 62
-        height: 202
+        height: 201
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0fb9533d5ae525c46816b2675778de80
-      internalID: 863707230
+      spriteID: 074d2fa908ecd9040800000000000000
+      internalID: 4656104641521702000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_2
+      name: sister_twist-Sheet_2
       rect:
         serializedVersion: 2
-        x: 124
-        y: 0
+        x: 129
+        y: 2
         width: 62
-        height: 202
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 983a6ab1ef0677140a0a94fe6e6c7cec
-      internalID: 618545157
+      spriteID: 713357f581c72cab0800000000000000
+      internalID: -4989288993050512617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_3
+      name: sister_twist-Sheet_3
       rect:
         serializedVersion: 2
-        x: 186
-        y: 0
+        x: 193
+        y: 1
         width: 62
-        height: 202
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0aacd4f9847c6b04484f74b3b975dd6e
-      internalID: -1258183225
+      spriteID: a214bc7829c1973e0800000000000000
+      internalID: -2055580339248873174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_4
+      name: sister_twist-Sheet_4
       rect:
         serializedVersion: 2
-        x: 248
-        y: 0
+        x: 257
+        y: 1
         width: 62
-        height: 202
+        height: 201
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: af92437f11be1d34fbec7b0b58eb9b7a
-      internalID: 1584795037
+      spriteID: 94aa8eded88e09470800000000000000
+      internalID: 8399469001325455945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_5
+      name: sister_twist-Sheet_5
       rect:
         serializedVersion: 2
-        x: 310
-        y: 0
+        x: 321
+        y: 1
         width: 62
-        height: 202
+        height: 201
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 893cfa7575f2cce40898ee2d2a2b5143
-      internalID: 1241359077
+      spriteID: 564ed5c23a9a666a0800000000000000
+      internalID: -6456286497499913115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_6
+      name: sister_twist-Sheet_6
       rect:
         serializedVersion: 2
-        x: 372
-        y: 0
+        x: 385
+        y: 1
         width: 62
-        height: 202
+        height: 201
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a87cfae3db0ed044d83cf30e6de72e4a
-      internalID: 2121419376
+      spriteID: 81c15034230ae8f70800000000000000
+      internalID: 9191460027242978328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: default-Sheet_7
+      name: sister_twist-Sheet_7
       rect:
         serializedVersion: 2
-        x: 434
-        y: 0
+        x: 449
+        y: 1
         width: 62
-        height: 202
+        height: 201
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4cd0a0ea98e100641afc732678ede638
-      internalID: -1002117985
+      spriteID: 06f04d38399721f50800000000000000
+      internalID: 6850671657662812000
       vertices: []
       indices: 
       edges: []
@@ -279,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8d532d44d51e21b448a86b4561c0cc42
+    spriteID: 6d8bf75193137cb4e8a193c6247adc93
     internalID: 0
     vertices: []
     indices: 
@@ -289,16 +310,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":62.0,"y":202.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":204.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      default-Sheet_0: 4340766602723917302
-      default-Sheet_1: 863707230
-      default-Sheet_2: 618545157
-      default-Sheet_3: -1258183225
-      default-Sheet_4: 1584795037
-      default-Sheet_5: 1241359077
-      default-Sheet_6: 2121419376
-      default-Sheet_7: -1002117985
+      sister_twist-Sheet_0: -7488985186458584283
+      sister_twist-Sheet_1: 4656104641521702000
+      sister_twist-Sheet_2: -4989288993050512617
+      sister_twist-Sheet_3: -2055580339248873174
+      sister_twist-Sheet_4: 8399469001325455945
+      sister_twist-Sheet_5: -6456286497499913115
+      sister_twist-Sheet_6: 9191460027242978328
+      sister_twist-Sheet_7: 6850671657662812000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

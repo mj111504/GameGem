@@ -927,6 +927,7 @@ MonoBehaviour:
   livingRoomScene: LivingRoom
   sisterRoomScene: SisterRoom
   brotherRoomScene: BrotherRoom
+  night: Night
 --- !u!4 &1128586609
 Transform:
   m_ObjectHideFlags: 0
